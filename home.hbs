@@ -1,0 +1,284 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file into the body of the default.hbs template --}}
+
+
+
+{{!-- Custom Fairvest Landing Page --}}
+<article class="fairvest-landing">
+    {{!-- Hero Section --}}
+    <section class="hero" {{#if @custom.background_image}}style="background-image: linear-gradient(135deg, rgba(15, 32, 39, 0.9) 0%, rgba(32, 58, 67, 0.9) 50%, rgba(44, 83, 100, 0.9) 100%), url({{@custom.background_image}}); background-size: cover; background-position: center;"{{/if}}>
+        <div class="hero-content">
+            <div class="hero-brand">
+                <h1 class="site-title">{{#if @custom.header_text}}{{@custom.header_text}}{{else}}Investment Intelligence<br>by Bouthillier Capital{{/if}}</h1>
+            </div>
+            <p class="hero-description">
+                Deep analysis, rigorous research, and actionable insights from a registered portfolio manager committed to transparency and excellence.
+            </p>
+            <a href="/intel/" class="btn-primary">Read Latest Analysis</a>
+        </div>
+    </section>
+
+    {{!-- About Section --}}
+    <section class="about">
+        <div class="container">
+            <h2>Independent. Disciplined. Transparent.</h2>
+            <p class="lead">
+                Fairvest brings you the research and market insights that power Bouthillier Capital's investment strategies. Our approach combines quantitative rigor with qualitative analysis, focusing on companies built to last.
+            </p>
+            
+            <div class="principles-grid">
+                <div class="principle">
+                    <h3>Macro-Economic Context</h3>
+                    <p>Understanding the global landscape in which risk assets operate, grounded in fundamental economic principles.</p>
+                </div>
+                
+                <div class="principle">
+                    <h3>Financial Analysis</h3>
+                    <p>Quantitative and qualitative tracking of international issuers using powerful research and analytical tools.</p>
+                </div>
+                
+                <div class="principle">
+                    <h3>Dynamic Approach</h3>
+                    <p>Beyond official statistics—monitoring market positioning, sentiment, and unexpected developments with constant adaptation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{!-- Use theme's featured component for latest posts --}}
+    {{> "components/featured" showFeatured=@custom.show_featured_posts limit=3}}
+
+    {{!-- About B-CAP --}}
+    <section class="about-bcap">
+        <div class="container">
+            <h2>About Bouthillier Capital</h2>
+            <p class="bcap-description">
+                B-CAP is a portfolio manager registered with the AMF and CVMO, dedicated to generating competitive returns through innovative strategies. Our flagship B-CAP Global Quality (QG) strategy focuses on high-quality, dividend-paying companies with sustainable growth potential.
+            </p>
+            <p class="bcap-motto"><em>Fac Quod Debes</em> – Do what you must</p>
+            <a href="https://b-cap.ca" class="btn-secondary" target="_blank" rel="noopener">Visit Bouthillier Capital</a>
+        </div>
+    </section>
+
+    {{!-- Use theme's CTA component --}}
+    {{> "components/cta"}}
+</article>
+
+<style>
+    /* Reset and base styles */
+    .fairvest-landing {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        color: #1a1a1a;
+        line-height: 1.6;
+    }
+
+    .fairvest-landing .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    /* Hero Section */
+    .fairvest-landing .hero {
+        background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+        color: white;
+        padding: 10rem 2rem 8rem;
+        text-align: center;
+    }
+
+    .fairvest-landing .hero-brand {
+        margin-bottom: 3rem;
+    }
+
+    .fairvest-landing .site-title {
+        font-size: 5rem;
+        font-weight: 700;
+        margin: 0 0 0.5rem;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+    }
+
+    .fairvest-landing .site-tagline {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: 0;
+        opacity: 0.9;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    .fairvest-landing .hero-description {
+        font-size: 1.5rem;
+        max-width: 800px;
+        margin: 0 auto 3rem;
+        opacity: 0.95;
+        line-height: 1.7;
+    }
+
+    /* Buttons */
+    .fairvest-landing .btn-primary, 
+    .fairvest-landing .btn-secondary {
+        display: inline-block;
+        padding: 1.25rem 3rem;
+        font-size: 1.125rem;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .fairvest-landing .btn-primary {
+        background: white;
+        color: #0f2027;
+    }
+
+    .fairvest-landing .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .fairvest-landing .btn-secondary {
+        background: transparent;
+        color: #0f2027;
+        border: 2px solid #0f2027;
+    }
+
+    .fairvest-landing .btn-secondary:hover {
+        background: #0f2027;
+        color: white;
+    }
+
+    /* About Section */
+    .fairvest-landing .about {
+        padding: 7rem 2rem;
+        background: #f8f9fa;
+    }
+
+    .fairvest-landing .about h2 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #0f2027;
+    }
+
+    .fairvest-landing .lead {
+        font-size: 1.5rem;
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto 5rem;
+        color: #4a5568;
+        line-height: 1.8;
+    }
+
+    .fairvest-landing .principles-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3rem;
+        margin-top: 3rem;
+    }
+
+    .fairvest-landing .principle h3 {
+        font-size: 1.75rem;
+        margin-bottom: 1.25rem;
+        color: #0f2027;
+    }
+
+    .fairvest-landing .principle p {
+        color: #4a5568;
+        line-height: 1.8;
+        font-size: 1.125rem;
+    }
+
+    /* About B-CAP Section */
+    .fairvest-landing .about-bcap {
+        padding: 7rem 2rem;
+        background: #0f2027;
+        color: white;
+        text-align: center;
+    }
+
+    .fairvest-landing .about-bcap h2 {
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .fairvest-landing .bcap-description {
+        font-size: 1.375rem;
+        max-width: 900px;
+        margin: 0 auto 2.5rem;
+        line-height: 1.8;
+        opacity: 0.95;
+    }
+
+    .fairvest-landing .bcap-motto {
+        font-size: 1.5rem;
+        font-style: italic;
+        margin: 2.5rem 0;
+        opacity: 0.9;
+    }
+
+    .fairvest-landing .about-bcap .btn-secondary {
+        border-color: white;
+        color: white;
+    }
+
+    .fairvest-landing .about-bcap .btn-secondary:hover {
+        background: white;
+        color: #0f2027;
+    }
+
+    /* Hide footer entirely on home page - multiple selectors to ensure it works */
+    body.home-template .gh-foot,
+    body.home-template footer,
+    body.home-template .site-footer,
+    .fairvest-landing ~ footer,
+    .fairvest-landing ~ .gh-foot,
+    .fairvest-landing ~ .site-footer {
+        display: none !important;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .fairvest-landing .site-title {
+            font-size: 3rem;
+        }
+
+        .fairvest-landing .hero {
+            padding: 6rem 1.5rem 5rem;
+        }
+
+        .fairvest-landing .hero-description {
+            font-size: 1.25rem;
+        }
+
+        .fairvest-landing .about h2, 
+        .fairvest-landing .about-bcap h2 {
+            font-size: 2.25rem;
+        }
+
+        .fairvest-landing .lead {
+            font-size: 1.25rem;
+        }
+
+        .fairvest-landing .principle h3 {
+            font-size: 1.5rem;
+        }
+
+        .fairvest-landing .principle p {
+            font-size: 1rem;
+        }
+
+        .fairvest-landing .bcap-description {
+            font-size: 1.125rem;
+        }
+
+        .fairvest-landing .principles-grid {
+            gap: 2rem;
+        }
+
+        .fairvest-landing .container {
+            padding: 0 1.5rem;
+        }
+    }
+</style>
