@@ -1,7 +1,7 @@
 {
-    "name": "source",
-    "description": "A default theme for the Ghost publishing platform",
-    "demo": "https://source.ghost.io",
+    "name": "fairvest",
+    "description": "Fairvest theme for Bouthillier Capital - based on Ghost Source theme",
+    "demo": "https://fairvest.bcap.ca",
     "version": "1.5.0",
     "engines": {
         "ghost": ">=5.0.0"
