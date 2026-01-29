@@ -1,4 +1,20 @@
-# Source
+# Fairvest Theme (Based on Ghost Source)
+
+This is a customized version of the Ghost [Source](https://github.com/TryGhost/Source) theme for the Fairvest knowledge hub by Bouthillier Capital.
+
+## 📋 Fairvest Customizations
+
+**For details about customizations and how to update this theme when Ghost releases new versions of Source, please see [CUSTOMIZATIONS.md](CUSTOMIZATIONS.md).**
+
+Key customizations:
+- Custom corporate landing page on `home.hbs`
+- Separate custom CSS in `assets/css/fairvest-custom.css`
+- B-CAP branding and color scheme
+- Automatic deployment via GitHub Actions
+
+---
+
+# Original Source Theme Documentation
 
 The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Source! If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Source/releases) page.
 
