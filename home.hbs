@@ -9,11 +9,11 @@
     <section class="hero" {{#if @custom.background_image}}style="background-image: linear-gradient(135deg, rgba(15, 32, 39, 0.9) 0%, rgba(32, 58, 67, 0.9) 50%, rgba(44, 83, 100, 0.9) 100%), url({{@custom.background_image}}); background-size: cover; background-position: center;"{{/if}}>
         <div class="hero-content">
             <div class="hero-brand">
-                <h1 class="site-title">{{#if @custom.header_text}}{{@custom.header_text}}{{else}}Investment Intelligence<br>by Bouthillier Capital{{/if}}</h1>
+                <h1 class="site-title">Investment Intelligence<br>by Bouthillier Capital</h1>
             </div>
-            <p class="hero-description">
-                Deep analysis, rigorous research, and actionable insights from a registered portfolio manager committed to transparency and excellence.
-            </p>
+            <h2 class="hero-description">
+                Deep analysis, rigorous research, and actionable insights from a wealth manager committed to transparency and excellence.
+            </h2>
             <a href="/intel/" class="btn-primary">Read Latest Analysis</a>
         </div>
     </section>
@@ -56,7 +56,7 @@
                 B-CAP is a portfolio manager registered with the AMF and CVMO, dedicated to generating competitive returns through innovative strategies. Our flagship B-CAP Global Quality (QG) strategy focuses on high-quality, dividend-paying companies with sustainable growth potential.
             </p>
             <p class="bcap-motto"><em>Fac Quod Debes</em> – Do what you must</p>
-            <a href="https://b-cap.ca" class="btn-secondary" target="_blank" rel="noopener">Visit Bouthillier Capital</a>
+            <a href="https://bcap.ca" class="btn-secondary" target="_blank" rel="noopener">Visit Bouthillier Capital</a>
         </div>
     </section>
 
@@ -80,7 +80,7 @@
 
     /* Hero Section */
     .fairvest-landing .hero {
-        background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+        background: linear-gradient(135deg, rgba(15, 32, 39, 0.95) 0%, rgba(32, 58, 67, 0.95) 50%, rgba(44, 83, 100, 0.95) 100%);
         color: white;
         padding: 10rem 2rem 8rem;
         text-align: center;
@@ -109,7 +109,8 @@
 
     .fairvest-landing .hero-description {
         font-size: 1.5rem;
-        max-width: 800px;
+        font-weight: 400;
+        max-width: 900px;
         margin: 0 auto 3rem;
         opacity: 0.95;
         line-height: 1.7;
@@ -140,13 +141,13 @@
 
     .fairvest-landing .btn-secondary {
         background: transparent;
-        color: #0f2027;
-        border: 2px solid #0f2027;
+        color: white;
+        border: 2px solid white;
     }
 
     .fairvest-landing .btn-secondary:hover {
-        background: #0f2027;
-        color: white;
+        background: white;
+        color: #0f2027;
     }
 
     /* About Section */
@@ -221,11 +222,13 @@
     .fairvest-landing .about-bcap .btn-secondary {
         border-color: white;
         color: white;
+        margin-top: 1.5rem;
     }
 
     .fairvest-landing .about-bcap .btn-secondary:hover {
         background: white;
         color: #0f2027;
+        transform: translateY(-2px);
     }
 
     /* Hide footer entirely on home page - multiple selectors to ensure it works */
@@ -250,6 +253,7 @@
 
         .fairvest-landing .hero-description {
             font-size: 1.25rem;
+            max-width: 100%;
         }
 
         .fairvest-landing .about h2, 
