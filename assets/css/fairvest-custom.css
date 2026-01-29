@@ -25,10 +25,11 @@
 
 /* Hero Section */
 .fairvest-landing .hero {
-    background: linear-gradient(135deg, rgba(15, 32, 39, 0.95) 0%, rgba(32, 58, 67, 0.95) 50%, rgba(44, 83, 100, 0.95) 100%);
+    background: linear-gradient(135deg, rgba(20, 33, 42, 0.95) 0%, rgba(32, 50, 60, 0.95) 100%);
     color: white;
     padding: 10rem 2rem 8rem;
     text-align: center;
+    position: relative;
 }
 
 .fairvest-landing .hero-brand {
@@ -75,24 +76,28 @@
 }
 
 .fairvest-landing .btn-primary {
-    background: white;
-    color: #0f2027;
+    background: #D4A574;
+    color: #14212A;
+    border: 2px solid #D4A574;
 }
 
 .fairvest-landing .btn-primary:hover {
+    background: #C4956A;
+    border-color: #C4956A;
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(212, 165, 116, 0.3);
 }
 
 .fairvest-landing .btn-secondary {
     background: transparent;
     color: white;
-    border: 2px solid white;
+    border: 2px solid #D4A574;
 }
 
 .fairvest-landing .btn-secondary:hover {
-    background: white;
-    color: #0f2027;
+    background: #D4A574;
+    color: #14212A;
+    border-color: #D4A574;
 }
 
 /* About Section */
@@ -105,7 +110,7 @@
     font-size: 3rem;
     text-align: center;
     margin-bottom: 2rem;
-    color: #0f2027;
+    color: #14212A;
 }
 
 .fairvest-landing .lead {
@@ -127,7 +132,19 @@
 .fairvest-landing .principle h3 {
     font-size: 1.75rem;
     margin-bottom: 1.25rem;
-    color: #0f2027;
+    color: #14212A;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.fairvest-landing .principle h3:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 4px;
+    height: 2rem;
+    background: #D4A574;
 }
 
 .fairvest-landing .principle p {
@@ -139,7 +156,7 @@
 /* About B-CAP Section */
 .fairvest-landing .about-bcap {
     padding: 7rem 2rem;
-    background: #0f2027;
+    background: #14212A;
     color: white;
     text-align: center;
 }
@@ -165,14 +182,15 @@
 }
 
 .fairvest-landing .about-bcap .btn-secondary {
-    border-color: white;
+    border-color: #D4A574;
     color: white;
     margin-top: 1.5rem;
 }
 
 .fairvest-landing .about-bcap .btn-secondary:hover {
-    background: white;
-    color: #0f2027;
+    background: #D4A574;
+    color: #14212A;
+    border-color: #D4A574;
     transform: translateY(-2px);
 }
 
