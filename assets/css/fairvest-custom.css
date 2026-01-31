@@ -54,12 +54,12 @@
 }
 
 .fairvest-landing .hero-description {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 400;
     max-width: 900px;
     margin: 0 auto 3rem;
     opacity: 0.95;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 /* Buttons */
@@ -67,7 +67,7 @@
 .fairvest-landing .btn-secondary {
     display: inline-block;
     padding: 1.25rem 3rem;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 600;
     text-decoration: none;
     border-radius: 4px;
@@ -109,12 +109,12 @@
 
 .fairvest-landing .eyebrow {
     text-align: center;
-    font-size: 0.875rem;
+    font-size: 1.125rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: #0064FF;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .fairvest-landing .about h2 {
@@ -126,12 +126,12 @@
 }
 
 .fairvest-landing .section-footer {
-    font-size: 1.125rem;
+    font-size: 1.375rem;
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     margin: 4rem auto 0;
     color: #003366;
-    line-height: 1.8;
+    line-height: 1.7;
 }
 
 .fairvest-landing .principles-grid {
@@ -166,7 +166,7 @@
 }
 
 .fairvest-landing .principle-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin-bottom: 1rem;
     color: #000032;
     font-weight: 600;
@@ -175,7 +175,7 @@
 .fairvest-landing .principle-card p {
     color: #003366;
     line-height: 1.7;
-    font-size: 1rem;
+    font-size: 1.125rem;
 }
 
 /* About B-CAP Section */
@@ -192,15 +192,15 @@
 }
 
 .fairvest-landing .bcap-description {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
     max-width: 900px;
     margin: 0 auto 2.5rem;
-    line-height: 1.8;
+    line-height: 1.7;
     opacity: 0.95;
 }
 
 .fairvest-landing .bcap-motto {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     font-style: italic;
     margin: 2.5rem 0;
     opacity: 0.9;
@@ -239,18 +239,22 @@ body.home-template .site-footer,
         padding: 6rem 1.5rem 5rem;
     }
 
-    .fairvest-landing .hero-description {
-        font-size: 1.25rem;
-        max-width: 100%;
-    }
+        .fairvest-landing .hero-description {
+            font-size: 1.375rem;
+            max-width: 100%;
+        }
 
     .fairvest-landing .about h2, 
     .fairvest-landing .about-bcap h2 {
         font-size: 2.25rem;
     }
 
-        .fairvest-landing .section-footer {
+        .fairvest-landing .eyebrow {
             font-size: 1rem;
+        }
+
+        .fairvest-landing .section-footer {
+            font-size: 1.125rem;
         }
 
         .fairvest-landing .principle-card {
@@ -262,16 +266,16 @@ body.home-template .site-footer,
         }
 
         .fairvest-landing .principle-card h3 {
-            font-size: 1.25rem;
+            font-size: 1.375rem;
         }
 
         .fairvest-landing .principle-card p {
-            font-size: 0.9375rem;
+            font-size: 1rem;
         }
 
-    .fairvest-landing .bcap-description {
-        font-size: 1.125rem;
-    }
+        .fairvest-landing .bcap-description {
+            font-size: 1.25rem;
+        }
 
     .fairvest-landing .principles-grid {
         gap: 2rem;
