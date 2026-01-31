@@ -25,7 +25,7 @@
 
 /* Hero Section */
 .fairvest-landing .hero {
-    background: linear-gradient(135deg, rgba(20, 33, 42, 0.95) 0%, rgba(32, 50, 60, 0.95) 100%);
+    background: #0064FF;
     color: white;
     padding: 10rem 2rem 8rem;
     text-align: center;
@@ -76,34 +76,35 @@
 }
 
 .fairvest-landing .btn-primary {
-    background: #D4A574;
-    color: #14212A;
-    border: 2px solid #D4A574;
+    background: white;
+    color: #0064FF;
+    border: 2px solid white;
 }
 
 .fairvest-landing .btn-primary:hover {
-    background: #C4956A;
-    border-color: #C4956A;
+    background: #D7F5FF;
+    border-color: #D7F5FF;
+    color: #0064FF;
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(212, 165, 116, 0.3);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
 }
 
 .fairvest-landing .btn-secondary {
     background: transparent;
     color: white;
-    border: 2px solid #D4A574;
+    border: 2px solid white;
 }
 
 .fairvest-landing .btn-secondary:hover {
-    background: #D4A574;
-    color: #14212A;
-    border-color: #D4A574;
+    background: white;
+    color: #000032;
+    border-color: white;
 }
 
 /* About Section */
 .fairvest-landing .about {
     padding: 7rem 2rem;
-    background: #f8f9fa;
+    background: #D7F5FF;
 }
 
 .fairvest-landing .eyebrow {
@@ -112,7 +113,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #D4A574;
+    color: #0064FF;
     margin-bottom: 1rem;
 }
 
@@ -120,7 +121,7 @@
     font-size: 3rem;
     text-align: center;
     margin-bottom: 4rem;
-    color: #14212A;
+    color: #000032;
     font-weight: 700;
 }
 
@@ -129,7 +130,7 @@
     text-align: center;
     max-width: 800px;
     margin: 4rem auto 0;
-    color: #4a5568;
+    color: #003366;
     line-height: 1.8;
 }
 
@@ -144,22 +145,22 @@
     background: white;
     padding: 3rem 2.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 100, 255, 0.1);
     transition: all 0.3s ease;
     position: relative;
-    border-top: 4px solid #D4A574;
+    border-top: 4px solid #0064FF;
 }
 
 .fairvest-landing .principle-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(212, 165, 116, 0.15);
+    box-shadow: 0 8px 24px rgba(0, 100, 255, 0.2);
 }
 
 .fairvest-landing .card-number {
     font-size: 3rem;
     font-weight: 700;
-    color: #D4A574;
-    opacity: 0.2;
+    color: #0064FF;
+    opacity: 0.15;
     margin-bottom: 1rem;
     line-height: 1;
 }
@@ -167,12 +168,12 @@
 .fairvest-landing .principle-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #14212A;
+    color: #000032;
     font-weight: 600;
 }
 
 .fairvest-landing .principle-card p {
-    color: #4a5568;
+    color: #003366;
     line-height: 1.7;
     font-size: 1rem;
 }
@@ -180,7 +181,7 @@
 /* About B-CAP Section */
 .fairvest-landing .about-bcap {
     padding: 7rem 2rem;
-    background: #14212A;
+    background: #000032;
     color: white;
     text-align: center;
 }
@@ -206,15 +207,15 @@
 }
 
 .fairvest-landing .about-bcap .btn-secondary {
-    border-color: #D4A574;
+    border-color: white;
     color: white;
     margin-top: 1.5rem;
 }
 
 .fairvest-landing .about-bcap .btn-secondary:hover {
-    background: #D4A574;
-    color: #14212A;
-    border-color: #D4A574;
+    background: white;
+    color: #000032;
+    border-color: white;
     transform: translateY(-2px);
 }
 
